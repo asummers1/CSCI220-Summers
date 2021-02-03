@@ -1,0 +1,28 @@
+textarea{
+	width: 19em;
+	height: 8em;
+}
+h1{
+	font-family: Gill Sans Extrabold, sans-serif;
+	color: indianred;
+}
+h2{
+	font-family: Cambria, sans-serif;
+	color: green;
+}
+img {
+	float: right;
+	width: 9em;
+	height: 9em;
+}
+table, td{
+	border: 1px solid #FFA300;
+}
+table, t{
+	text-align: center;
+	background-color: yellow;
+}
+body{
+	background-color: lightblue;
+}
+
