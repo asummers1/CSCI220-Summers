@@ -14,9 +14,14 @@ img {
 	float: right;
 	width: 9em;
 	height: 9em;
+	margin-left: 15px;
+	margin-bottom: 15px;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.5);
+	border: 1px solid #444;
+	border-radius: 5px;
 }
 table, td{
-	border: 1px solid #FFA300;
+	border: 1px solid #BD6C6C
 }
 table, t{
 	text-align: center;
@@ -25,4 +30,6 @@ table, t{
 body{
 	background-color: lightblue;
 }
+
+
 
