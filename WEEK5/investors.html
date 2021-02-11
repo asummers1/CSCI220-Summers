@@ -32,7 +32,7 @@
 		width: 200px;
 	}
 	
-	li { /*Style for numbered lists*/
+	li {
 		margin-bottom: 10px;
 	}
 	
@@ -49,7 +49,7 @@
 		font-size: 1.2rem;
 	}
 	
-	.navigationElement {
+	.navigationElement { /*Used for the page navigation buttons */
 		display: inline-block;
 		height: 3rem;
 		line-height: 3rem;
@@ -107,29 +107,29 @@
 	<section>
 	<h3>RadTech, Inc.</h3>
 		<ul>
-			<li>RadTech is an industry leader providing advanced technology for conducting scientific research.</li>
+			<li><b>RadTech</b> is an industry leader providing advanced technology for conducting scientific research.</li>
 			<li class="fundingstyle">Funding amount: $50,000</li>
-			<img src="radtech-logo.png"> <!-- I placed the image inside the list so it would be centered properly. -->
+			<img src="radtech-logo.png" alt="RadTech logo"> <!-- I placed the image inside the list so it would be centered properly. -->
 		</ul>	
 	</section>
 	<section>
 		<h3>Upstart Pharmaceuticals</h3>
 			<ul>
-			<li>Upstart research scientists are working to develop the next generation of safe, all-natural, and cost-effective supplements to help fight fatigue and provide mental focus for students and business professionals. </li>
+				<li><b>Upstart</b> research scientists are working to develop the next generation of safe, all-natural, and cost-effective supplements to help fight fatigue and provide mental focus for students and business professionals. </li>
 			<li class="fundingstyle">Funding amount: $75,000</li>
-			<img src="upstart-logo.png">
+			<img src="upstart-logo.png" alt="Upstart Pharma logo">
 			</ul>
 		<h3>Polytechnic University</h3>
 		<ul>
-		<li>Polytechnic University is investing in research to benefit students by providing funding and internship opportunities for students in biology and chemistry. </li>
+			<li><b>Polytechnic University</b> is investing in research to benefit students by providing funding and internship opportunities for students in biology and chemistry. </li>
 		<li class="fundingstyle">Funding amount: $25,000</li>
-		<img src="polytech-logo.png">
+		<img src="polytech-logo.png" alt="Polytechnic University logo">
 		</ul>
 	</section>
 	<span></span> <!--Creates a separation between section and table -->
 	<table class="dataTable">
           <thead>
-              <tr class="zebra">
+              <tr>
                   <th colspan="4">Investor Funding Summary</th>
               </tr>
           </thead>
@@ -139,8 +139,8 @@
                   <td>RadTech, Inc.</td>
 				  <td>Upstart Pharmaceuticals</td>
 				  <td>Polytechnic University</td>
-              </tr>
-			  <tr class="zebra">
+			  </tr>
+			  <tr>
 				  <td>Funding Amount</td>
 				  <td>$50,000</td>
 				  <td>$75,000</td>
