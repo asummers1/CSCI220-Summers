@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<title>Research Investors</title>
+</head>
+
+<body>
+	<style>
+	body {
+		background-color: #e6f1ff;
+		font-family: Arial;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	
+	a {
+		color: #03506f
+	}
+	
+	input,
+	textarea {
+		padding: 1rem;
+		margin: 0;
+		width: 50%;
+		display: block;
+		margin: 10px 0;
+	}
+	
+	#submitButton { /*Id used for the submitButton. I used this over class since I only used this once */
+		width: 200px;
+	}
+	
+	li { /*Style for numbered lists*/
+		margin-bottom: 10px;
+	}
+	
+	#navigation { /*Used for divs that hold navigation elements*/
+		background-color: #e6fefd;
+		border-color: #3c7c24;
+		border-width: 3px;
+		border-style: solid;
+		border-radius: 5px;
+	}
+	
+	#navigation a { /*Used for navigation links*/
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+	
+	.navigationElement {
+		display: inline-block;
+		height: 3rem;
+		line-height: 3rem;
+		padding: 1rem;
+	}
+	
+	.activeNavigationElement {
+		background-color: lightblue;
+	}
+	
+	.figure {
+		width: 150px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+		border: 1px solid #000;
+		border-radius: 3px;
+	}
+	
+	table {
+		border-collapse: collapse;
+	}
+	
+	.dataTable {
+		width: 50%;
+		margin: 0px auto;
+	}
+	
+	td {
+		border: 1px solid #ccc;
+		padding: 10px;
+	}
+	
+	tr:nth-child(even) { /*Used to color every other row in the table. Information obtained from here: https://www.w3schools.com/howto/howto_css_table_zebra.asp */
+		background-color: #eee;
+	}
+	
+	th {
+		background-color: #03506f;
+		color: #fff;
+		padding: 10px;
+		font-size: 1.2rem;
+	}
+	</style>
+	<h1>Jennifer's Website</h1>
+	<div id="navigation">
+		<div class="navigationElement">
+			<a href="experimentdetails.html">Experiment Details</a>
+		</div>
+		<div class="navigationElement activeNavigationElement">
+			<a href="investors.html">Investors</a>
+		</div>
+	</div>
+	<main> <!--The Research Investors section is the main part of the file -->
+	<h2>Research Investors</h2>
+	<section>
+	<h3>RadTech, Inc.</h3>
+		<ul>
+			<li>RadTech is an industry leader providing advanced technology for conducting scientific research.</li>
+			<li class="fundingstyle">Funding amount: $50,000</li>
+			<img src="radtech-logo.png"> <!-- I placed the image inside the list so it would be centered properly. -->
+		</ul>	
+	</section>
+	<section>
+		<h3>Upstart Pharmaceuticals</h3>
+			<ul>
+			<li>Upstart research scientists are working to develop the next generation of safe, all-natural, and cost-effective supplements to help fight fatigue and provide mental focus for students and business professionals. </li>
+			<li class="fundingstyle">Funding amount: $75,000</li>
+			<img src="upstart-logo.png">
+			</ul>
+		<h3>Polytechnic University</h3>
+		<ul>
+		<li>Polytechnic University is investing in research to benefit students by providing funding and internship opportunities for students in biology and chemistry. </li>
+		<li class="fundingstyle">Funding amount: $25,000</li>
+		<img src="polytech-logo.png">
+		</ul>
+	</section>
+	<span></span> <!--Creates a separation between section and table -->
+	<table class="dataTable">
+          <thead>
+              <tr class="zebra">
+                  <th colspan="4">Investor Funding Summary</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+				  <td> </td> <!--Placeholder data cell used as filler -->
+                  <td>RadTech, Inc.</td>
+				  <td>Upstart Pharmaceuticals</td>
+				  <td>Polytechnic University</td>
+              </tr>
+			  <tr class="zebra">
+				  <td>Funding Amount</td>
+				  <td>$50,000</td>
+				  <td>$75,000</td>
+				  <td>$25,000</td>
+			  </tr>
+          </tbody>
+		</table>
+	</main>
+</body>
+</html>
