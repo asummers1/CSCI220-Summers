@@ -1,0 +1,140 @@
+body {
+		background-color: #e6f1ff; /*Very light blue */
+		font-family: Arial;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+	
+	a {
+		color: #03506f; /*Dark blue*/
+	}
+	
+	input,
+	textarea {
+		padding: 1rem;
+		width: 50%;
+		display: block;
+		margin: 10px 0;
+	}
+	
+	#submitButton { /*Id used for the submitButton. I used this over class since I only used this once per page*/
+		width: 200px;
+	}
+	
+	li { /*Style for numbered lists*/
+		margin-bottom: 10px;
+	}
+	
+	#navigation { /*Used for divs that hold navigation elements*/
+		background-color: #e6fefd;
+		border-color: #3c7c24;
+		border-width: 3px;
+		border-style: solid;
+		border-radius: 5px;
+	}
+	fieldset p
+	{
+	margin-bottom: 1px;
+	}
+	fieldset input /*I want paragraphs and input boxes to be visually associated, but separated from other paragraphs and input boxes*/
+	{
+	margin-bottom: 25px;
+	}
+	#navigation a { /*Used for navigation links*/
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+	
+	.navigationElement {
+		display: inline-block;
+		height: 3rem;
+		line-height: 3rem;
+		padding: 1rem;
+	}
+	
+	.activeNavigationElement {
+		background-color: lightblue;
+	}
+	
+	figure {
+		border: 1px solid #aaa;
+		border-radius: 3px;
+		padding: 10px;
+		text-align: center;
+		font-size: 80%;
+		color: #333;
+		margin: 0 0 15px 0;
+	}
+	
+	table {
+		border-collapse: collapse;
+	}
+	
+	.dataTable {
+		width: 50%;
+		margin: 0px auto;
+	}
+	
+	td {
+		border: 1px solid #ccc;
+		padding: 10px;
+	}
+	
+	tr:nth-child(even) { /*Used to color every other row in the table. Information obtained from here: https://www.w3schools.com/howto/howto_css_table_zebra.asp */
+		background-color: #eee;
+	}
+	
+	th {
+		background-color: #03506f;
+		color: #fff;
+		padding: 10px;
+		font-size: 1.2rem;
+	}
+
+	img {
+		max-width: 50%;
+	}
+
+section {
+	display: flex;
+	flex-direction: row; /*Useful for desktop view. Compare with column for mobile mode */
+	border-bottom: 1px dashed #333;
+	margin-bottom: 15px;
+}
+h1{
+	color: blue;
+	text-shadow: #FC0 1px 0 10px; /*Specific values taken from https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow*/
+}
+h2{
+	color: orange;
+}
+section h2 {
+	border: 2px solid green;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 300%;
+	color: #FF4500;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.leftcolumn {
+	flex: 1 1 75%; /*Utilized flexbox to set how columns grow and shrink upon resizing */
+	padding-right: 15px;
+}
+.rightcolumn {
+	flex: 1 1 25%;
+}
+form{
+	margin-top: 10px;
+}
+/* Mobile mode */
+@media (max-width: 500px) { /*From https://developer.mozilla.org/en-US/docs/Web/CSS/@media*/
+	section {
+		flex-direction: column; /*Content is formatted so that multiple elements will not occupy the same horizontal area. Useful for mobile views */
+	}
+	.leftcolumn {
+		padding-right: 0;
+	}
+}

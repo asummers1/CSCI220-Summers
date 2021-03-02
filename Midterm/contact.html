@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>contact.html</title>
+	<link rel="stylesheet" href="catsite.css">
+</head>
+
+<body>
+	<h1>The Cute Cat Site</h1>
+	<div id="navigation">
+		<div class="navigationElement">
+			<a href="main.html">Home</a>
+		</div>
+		<div class="navigationElement">
+			<a href="descriptions.html">Descriptions</a>
+		</div>
+		<div class="navigationElement">
+			<a href="events.html">Events</a>
+		</div>
+		<div class="navigationElement activeNavigationElement">
+		<a href="contact.html">Contact</a></div>
+	</div>
+	<p>Here you can contact us about any questions you might have.</p>
+	<form action="mailto:alexandermsummers@gmail.com" method="post" id="Contact">
+		<fieldset>
+			<legend>Enter in your information here.</legend>
+			<p>Your email address:</p>
+			<input type="email" title="Ex: about@example.com" pattern="/@.+\.\d{1,3}/"> <!--Regex obtained from regexishard.com. Intended to check if input is a valid email or not-->
+			<p class="formdescriptors">Please write your question here:</p>
+			<textarea style="resize: none; margin-top: 5px" placeholder="Enter in your question here."> </textarea></fieldset>
+	</form>
+</body>
+</html>
