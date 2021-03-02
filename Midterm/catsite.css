@@ -129,12 +129,3 @@ section h2 {
 form{
 	margin-top: 10px;
 }
-/* Mobile mode */
-@media (max-width: 500px) { /*From https://developer.mozilla.org/en-US/docs/Web/CSS/@media*/
-	section {
-		flex-direction: column; /*Content is formatted so that multiple elements will not occupy the same horizontal area. Useful for mobile views */
-	}
-	.leftcolumn {
-		padding-right: 0;
-	}
-}
