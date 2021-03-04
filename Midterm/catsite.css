@@ -103,7 +103,7 @@ h1{
 
 section {
 	display: flex;
-	flex-direction: row; /*Useful for desktop view. Compare with column for mobile mode */
+	flex-direction: row;
 	border-bottom: 1px dashed #333;
 	margin-bottom: 15px;
 }
