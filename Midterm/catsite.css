@@ -4,7 +4,7 @@ body {
 		font-size: 16px;
 		line-height: 1.5;
 	
-		max-width: 800px; /*Centers the content on the webpage. Common to most modern websites.*/
+		max-width: 800px; /*Centers the content on the webpage. Common to most modern websites. From here: https://www.w3schools.com/howto/howto_css_center_website.asp*/
 		margin: auto;
 	}
 h1{
