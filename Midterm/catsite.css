@@ -98,7 +98,7 @@ h1{
 	}
 
 	img {
-		max-width: 50%;
+		max-width: 80%;
 	}
 
 section {
@@ -126,11 +126,11 @@ section h2 {
 }
 
 .leftcolumn {
-	flex: 1 1 75%; /*Utilized flexbox to set how columns grow and shrink upon resizing */
+	flex: 1 1 65%; /*Utilized flexbox to set how columns grow and shrink upon resizing */
 	padding-right: 15px;
 }
 .rightcolumn {
-	flex: 1 1 25%;
+	flex: 1 1 35%;
 }
 form{
 	margin-top: 10px;
