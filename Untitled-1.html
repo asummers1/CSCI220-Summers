@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week10Assignment</title>
+</head>
+<p id="cool" name="hi">Test!</p>
+	<script>
+		var item = document.getElementById('cool');
+		console.log(item);
+		item.firstChild.nodeValue = "Very cool!";
+		
+		const variable = document.createTextNode("Super cool!");
+		
+		item.appendChild(variable);
+	</script>
+<body>
+</body>
+</html>

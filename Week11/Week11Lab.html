@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week11Lab</title>
+	<style>
+		#textboxJQuery
+		{
+			border: 3px solid blue;
+			margin-bottom: 10px;
+		}
+		#textareaJQuery
+		{
+			border: 3px solid green;
+		}
+	</style>
+	<script src="../jquery-3.6.0.min.js"></script>
+</head>
+<form style>
+	<input type="text" style="display: block" id="textboxJQuery">
+	<textarea id ="textareaJQuery"></textarea>
+	<button style="display:block">Button</button>
+</form>
+<body>
+	<script>
+		$("#textboxJQuery").css("border", "3px solid orange"); //Part 1: Selecting form elements and applying CSS style
+		$("#textareaJQuery").css("border", "5px solid brown");
+		
+		$("#textareaJQuery").click(function(){alert("Handler for .click() called."); //Part 2: Add class change to a user event
+									  });
+	</script>
+</body>
+</html>
