@@ -19,9 +19,11 @@ function getTarget(e)
 function buttonClick()
 {
 	var textBox = document.getElementById('taskToAdd');
-	
-	$('#listToAddTo').append("<li>" + textBox.value + "</li>"); //Adds a new list element
-	$('#taskToAdd').val(""); //Clears the textbox
+	if (textBox.value.length != 0) //Only add element if textbox content is not empty
+		{
+			list.innerHTML += "<li>" + textBox.value + "</li>"; //Adds a new list element
+		}
+	textBox.value = "";
 }
 function checkItem(e)
 {
@@ -30,5 +32,5 @@ function checkItem(e)
 }
 function clearElements()
 {
-	$('#listToAddTo').empty(); //Empties the task list
+	list.innerHTML = ""; //Clears list
 }
