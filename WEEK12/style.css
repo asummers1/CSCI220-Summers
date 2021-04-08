@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+html
+{
+	background-color: aliceblue;
+}
+body
+{
+	max-width: 800px; /*Centers the content on the webpage. Common to most modern websites. From here: https://www.w3schools.com/howto/howto_css_center_website.asp*/
+	
+	background-color: green;
+	
+	
+	border-radius: 5px;
+	text-align: center;
+	margin: auto;
+	padding-bottom: 20px;
+	
+}
+input{
+	margin-left: auto;
+	margin-right: auto;
+		width: 50%;
+		display: block;
+	background-color: aliceblue;
+	border-color: aliceblue;
+	margin-bottom: 20px;
+		
+}
+table {
+	margin: 0px auto;
+	width: 50%;
+	background-color: aliceblue;
+	border-color: aliceblue;
+}
+label, h1
+{
+	
+color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}

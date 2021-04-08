@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Week12AssignmentPage</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Employee Information Manager</h1>
+	<form id ="workerForm" onsubmit="return false"> <!--Prevents page from refreshing -->
+	<label for="txtName">Name</label>
+	<input type="text" id="txtName" required pattern="[\s\S]*\S[\s\S]*" title="This field is required"> <!--Regex checks if value is not null or whitespace -->
+	
+	<label for="txtTitle">Title </label>
+	<input type="text" id="txtTitle" required pattern="[\s\S]*\S[\s\S]*" title="This field is required">
+		
+	<label for="txtHireDate">Hiring date</label>
+	<input type="date" id="txtHireDate" required pattern="[\s\S]*\S[\s\S]*" title="This field is required">
+		
+	<button id="submitButton" type="submit">Submit</button>
+	</form>
+	<table border="1" id="tableToAddTo" style="border-width: 0px">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Title</th>
+			<th>Hire Date</th>
+		</tr>
+	</thead>
+		<tbody>
+		        <!--Textbox values are added to <tbody> in Week12Script.js -->
+		</tbody>
+	</table>
+<script src="../jquery-3.6.0.min.js"></script>
+<script src="Week12Script.js"></script>
+</body>
+</html>
