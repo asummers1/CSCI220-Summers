@@ -22,7 +22,7 @@ function getCellValue(row, index){ return $(row).children('td').eq(index).text()
 
 function addToList(inputs)
 	{
-		$("#tableToAddTo tbody").append("<tr><td>" + inputs[0].value + "</td><td>" + inputs[1].value + "</td><td>" + inputs[2].value + "</td></td>"); //Adds the three values to the table. JS arrays are zero-indexed.
+		$("#tableToAddTo tbody").append("<tr><td>" + inputs[0].value + "</td><td>" + inputs[1].value + "</td><td>" + inputs[2].value + "</td></tr>"); //Adds the three values to the table. JS arrays are zero-indexed.
 		
 		clearInput(inputs);
 	}
