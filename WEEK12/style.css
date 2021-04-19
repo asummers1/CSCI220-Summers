@@ -23,7 +23,7 @@ input{
 	width: 50%;
 	display: block;
 	background-color: aliceblue;
-	border-color: aliceblue;
+	
 	margin-bottom: 20px;
 	border-color: lightblue;
 		
@@ -52,4 +52,8 @@ td
 {
 	border-color: blue;
 	border-width: thin;
+}
+button{
+	border-radius: 2px;
+	margin-bottom: 6px;
 }
