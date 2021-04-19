@@ -31,7 +31,7 @@ input{
 table {
 	margin: 0px auto;
 	width: 50%;
-	background-color: aliceblue;
+	background-color: antiquewhite;
 	border-width: 2px;
 	border-color: blue;
 	border-style:ridge;
@@ -47,4 +47,9 @@ input:required {
 }
 input:invalid { /*Show warning on invalid input, without aggressive border highlighting */
     box-shadow:0 0 3px red;
+}
+td
+{
+	border-color: blue;
+	border-width: thin;
 }
