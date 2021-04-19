@@ -42,7 +42,7 @@ label, h1
 color: white;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
-input:required { 
+input:required { /*source for input:required and :invalid -- https://stackoverflow.com/a/6189446/11813067 */
     box-shadow:none;
 }
 input:invalid { /*Show warning on invalid input, without aggressive border highlighting */
