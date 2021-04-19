@@ -20,18 +20,21 @@ body
 input{
 	margin-left: auto;
 	margin-right: auto;
-		width: 50%;
-		display: block;
+	width: 50%;
+	display: block;
 	background-color: aliceblue;
 	border-color: aliceblue;
 	margin-bottom: 20px;
+	border-color: lightblue;
 		
 }
 table {
 	margin: 0px auto;
 	width: 50%;
 	background-color: aliceblue;
-	border-color: aliceblue;
+	border-width: 2px;
+	border-color: blue;
+	border-style:ridge;
 }
 label, h1
 {
