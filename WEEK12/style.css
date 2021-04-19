@@ -39,9 +39,9 @@ label, h1
 color: white;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
-input:required { /*Show warning on invalid input, without aggressive border highlighting */
+input:required { 
     box-shadow:none;
 }
-input:invalid {
+input:invalid { /*Show warning on invalid input, without aggressive border highlighting */
     box-shadow:0 0 3px red;
 }
