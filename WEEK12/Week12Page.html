@@ -7,6 +7,8 @@
 </head>
 
 <body>
+	<style>
+	</style>
 	<h1>Employee Information Manager</h1>
 	<form id ="workerForm" onsubmit="return false"> <!--Prevents page from refreshing -->
 	<label for="txtName">Name</label>
@@ -20,7 +22,7 @@
 		
 	<button id="submitButton" type="submit">Submit</button>
 	</form>
-	<table border="1" id="tableToAddTo" style="border-width: 0px">
+	<table border="1" id="tableToAddTo">
 	<thead>
 		<tr>
 			<th>Name</th>
@@ -34,5 +36,9 @@
 	</table>
 <script src="../jquery-3.6.0.min.js"></script>
 <script src="Week12Script.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
 </body>
 </html>

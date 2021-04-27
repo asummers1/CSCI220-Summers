@@ -1,9 +1,10 @@
 // JavaScript Document
 $("#workerForm").submit( function() {
-	inputs = $(":input").not(":input[type=button]");
+	var inputs = $(":input:not(:button)");
 	addToList(inputs);
 });
 
+$(document).ready(function(){$("#tableToAdd").DataTable();});
 //Sorting code taken from: https://stackoverflow.com/a/19947532/11813067
 $('th').click(function(){
     var table = $(this).parents('table').eq(0)
@@ -22,7 +23,14 @@ function getCellValue(row, index){ return $(row).children('td').eq(index).text()
 
 function addToList(inputs)
 	{
-		$("#tableToAddTo tbody").append("<tr><td>" + inputs[0].value + "</td><td>" + inputs[1].value + "</td><td>" + inputs[2].value + "</td></td>"); //Adds the three values to the table. JS arrays are zero-indexed.
+		$("#tableToAddTo tbody").append("<tr>") //Beginning of table row
+		for (var i = 0; i < inputs.length; i++)
+			{
+				
+				$("#tableToAddTo tbody").append("<td>" + inputs[i].value + "</td>"); //Contents of table row
+			}
+		$("#tableToAddTo tbody").append("</tr>"); //End of table row
+		
 		
 		clearInput(inputs);
 	}
