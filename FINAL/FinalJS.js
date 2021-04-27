@@ -9,9 +9,9 @@ document.getElementById('cartAdd').addEventListener('click', function()
 });
 
 var products = JSON.parse(document.getElementById('data').innerHTML);
-for (let i = 0; i < products.length; i++)
+for (let i = 0; i < products.length; i++) //Adds all the products to the list
 	{
-		AddElement(products[i]); //Method fails with products[1]'s image. The file is missing from Sweetwater's servers.
+		AddElement(products[i]);
 	}
 	function AddElement(elementInJson)
 	{
