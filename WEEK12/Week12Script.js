@@ -23,6 +23,7 @@ function getCellValue(row, index){ return $(row).children('td').eq(index).text()
 
 function addToList(inputs)
 	{
+<<<<<<< HEAD
 		$("#tableToAddTo tbody").append("<tr>") //Beginning of table row
 		for (var i = 0; i < inputs.length; i++)
 			{
@@ -31,6 +32,9 @@ function addToList(inputs)
 			}
 		$("#tableToAddTo tbody").append("</tr>"); //End of table row
 		
+=======
+		$("#tableToAddTo tbody").append("<tr><td>" + inputs[0].value + "</td><td>" + inputs[1].value + "</td><td>" + inputs[2].value + "</td></tr>"); //Adds the three values to the table. JS arrays are zero-indexed.
+>>>>>>> fdd3814fe0faf8d39baca0a1638dc2361cf1c410
 		
 		clearInput(inputs);
 	}
