@@ -1,10 +1,9 @@
 // JavaScript Document
 $("#workerForm").submit( function() {
-	var inputs = $(":input:not(:button)");
+	inputs = $(":input").not(":input[type=button]");
 	addToList(inputs);
 });
 
-$(document).ready(function(){$("#tableToAdd").DataTable();});
 //Sorting code taken from: https://stackoverflow.com/a/19947532/11813067
 $('th').click(function(){
     var table = $(this).parents('table').eq(0)
@@ -23,19 +22,9 @@ function getCellValue(row, index){ return $(row).children('td').eq(index).text()
 
 function addToList(inputs)
 	{
-<<<<<<< HEAD
-		$("#tableToAddTo tbody").append("<tr>") //Beginning of table row
-		for (var i = 0; i < inputs.length; i++)
-			{
-				
-				$("#tableToAddTo tbody").append("<td>" + inputs[i].value + "</td>"); //Contents of table row
-			}
-		$("#tableToAddTo tbody").append("</tr>"); //End of table row
-		
-=======
-		$("#tableToAddTo tbody").append("<tr><td>" + inputs[0].value + "</td><td>" + inputs[1].value + "</td><td>" + inputs[2].value + "</td></tr>"); //Adds the three values to the table. JS arrays are zero-indexed.
->>>>>>> fdd3814fe0faf8d39baca0a1638dc2361cf1c410
-		
+
+		$("#tableToAddTo tbody").append("<tr><td>" + inputs[0].value + "</td><td>" + inputs[1].value + "</td><td>" + inputs[2].value + "</td></td>"); //Adds the three values to the table. JS arrays are zero-indexed.
+
 		clearInput(inputs);
 	}
 function clearInput(inputs)
