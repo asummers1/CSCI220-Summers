@@ -31,7 +31,7 @@ input {
 table {
 	margin: 0px auto;
 	width: 50%;
-<<<<<<< HEAD
+
 	background-color:antiquewhite;
 	
 	
@@ -48,10 +48,10 @@ label, h1
 color: white;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
-<<<<<<< HEAD
 
-td{
-=======
+
+
+
 input:required { /*source for input:required and :invalid -- https://stackoverflow.com/a/6189446/11813067 */
     box-shadow:none;
 }
@@ -64,11 +64,7 @@ td
 	border-color: blue;
 	border-width: thin;
 }
-button{
+button {
 	border-radius: 2px;
 	margin-bottom: 6px;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> fdd3814fe0faf8d39baca0a1638dc2361cf1c410
